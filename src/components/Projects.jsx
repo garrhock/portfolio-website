@@ -22,7 +22,7 @@ function Projects() {
       <h2 className="text-2xl font-bold text-text-primary">Projects</h2>
       <div className="flex flex-row justify-between gap-4 py-5">
         {projects.map((project, index) => (
-          <div key={index} className="w-[50%] border border-primary/30 rounded-lg overflow-hidden hover:border-primary transition-all bg-bg-card/30">
+          <a href={project.link} key={index} className="cursor-pointer w-[50%] border border-primary/30 rounded-lg overflow-hidden hover:border-primary transition-all bg-bg-card/30">
             <div className="w-full h-48 bg-bg-card overflow-hidden">
               <img 
                 src={project.image} 
@@ -38,11 +38,8 @@ function Projects() {
                   <span key={i} className="text-xs text-text-secondary/70 bg-primary/10 px-1 py-1 rounded">{tech}</span>
                 ))}
               </div>
-              <a href={project.link} className="text-sm text-primary hover:text-primary-dark transition-colors">
-                View Project →
-              </a>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
