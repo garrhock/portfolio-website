@@ -2,17 +2,6 @@
 
 A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 
-## Features
-
-- ✨ Modern and clean design
-- 📱 Fully responsive (mobile, tablet, desktop)
-- 🎨 Beautiful gradient backgrounds and animations
-- 🧭 Smooth scrolling navigation
-- 💼 Project showcase section
-- 🛠️ Skills display with categorization
-- 📧 Contact form
-- ⚡ Fast performance with Vite
-
 ## Tech Stack
 
 - **React 18** - UI library
@@ -55,69 +44,3 @@ Preview the production build:
 ```bash
 npm run preview
 ```
-
-## Customization
-
-### Update Personal Information
-
-1. **Hero Section** (`src/components/Hero.jsx`):
-   - Change "Your Name" to your actual name
-   - Update the tagline and description
-
-2. **About Section** (`src/components/About.jsx`):
-   - Update location, experience, and specialization
-   - Customize the about text
-
-3. **Skills Section** (`src/components/Skills.jsx`):
-   - Add/remove your actual skills
-   - Organize them into relevant categories
-
-4. **Projects Section** (`src/components/Projects.jsx`):
-   - Replace placeholder projects with your real projects
-   - Update titles, descriptions, technologies, and links
-
-5. **Contact Section** (`src/components/Contact.jsx`):
-   - Configure form submission (connect to a backend or service like Formspree)
-   - Update social media links
-
-6. **Footer** (`src/components/Footer.jsx`):
-   - Update copyright name
-
-### Color Scheme
-
-The default color scheme uses blue and purple gradients. To customize:
-- Edit the Tailwind classes in components (e.g., `from-blue-400 to-purple-500`)
-- Or extend the theme in `tailwind.config.js`
-
-## Project Structure
-
-```
-portfolio-website/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx      # Navigation bar
-│   │   ├── Hero.jsx        # Hero/landing section
-│   │   ├── About.jsx       # About section
-│   │   ├── Skills.jsx      # Skills display
-│   │   ├── Projects.jsx    # Project showcase
-│   │   ├── Contact.jsx     # Contact form
-│   │   └── Footer.jsx      # Footer
-│   ├── App.jsx             # Main app component
-│   ├── App.css             # Custom styles & animations
-│   ├── index.css           # Tailwind directives
-│   └── main.jsx            # Entry point
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-└── vite.config.js
-```
-
-## License
-
-This project is open source and available under the MIT License.
-
----
-
-Built with ❤️ using React and Tailwind CSS
