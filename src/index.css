@@ -61,6 +61,35 @@
     animation: ripple3 10s ease-out infinite;
     animation-delay: 2s;
   }
+
+  .faded-column-borders {
+    position: relative;
+  }
+
+  .faded-column-borders::before,
+  .faded-column-borders::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      var(--color-primary) 0%,
+      transparent 20%,
+      transparent 80%,
+      var(--color-primary) 100%
+    );
+  }
+
+  .faded-column-borders::before {
+    left: 0;
+  }
+
+  .faded-column-borders::after {
+    right: 0;
+  }
 }
 
 @layer utilities {
@@ -126,5 +155,12 @@
   
   .animate-scroll {
     animation: scroll 20s linear infinite;
+  }
+}
+
+@media (max-width: 640px) {
+  .faded-column-borders::before,
+  .faded-column-borders::after {
+    display: none;
   }
 }

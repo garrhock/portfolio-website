@@ -21,7 +21,7 @@ function Skills() {
   const duplicatedTechnologies = [...technologies, ...technologies]
 
   return (
-    <div className="mb-8 overflow-hidden">
+    <div className=" mb-8 overflow-hidden">
       <h2 className="text-md font-bold mb-6">My Tools and Technologies</h2>
       
       <div className="relative">

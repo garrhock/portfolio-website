@@ -5,32 +5,32 @@ function Education() {
       degree: "Bachelor of Science in Computer Science",
       period: "Fall 2023 - Present",
       location: "Richardson, TX",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/UT_Dallas_2_Color_Emblem_-_SVG_Brand_Identity_File.svg/512px-UT_Dallas_2_Color_Emblem_-_SVG_Brand_Identity_File.svg.png?20191002052426"
+      logo: "/public/images/utdlogo.png"
     },
     {
       school: "Collin Community College",
       degree: "Associate Degree",
       period: "Fall 2021 - Spring 2023",
       location: "Melissa, TX",
-      logo: "https://play-lh.googleusercontent.com/jQZiYRLw29bZOBPhISv7hXOXKJdDis6BTJpggSxy4yBx9aXPxRhe1rPYqM9XvcUaa01e"
+      logo: "/public/images/collinlogo.png"
     },
     {
       school: "Melissa High School",
       degree: "High School Diploma",
       period: "Fall 2019 - Spring 2023",
       location: "Melissa, TX",
-      logo: "https://cmsv2-assets.apptegy.net/uploads/13424/file/3018588/e3a3b0ae-422a-478c-8e40-f9c3eba7d6de.png"
+      logo: "/public/images/melissalogo.png"
     }
   ]
 
   return (
     <div className="mb-16">
-      <div className="flex flex-row justify-between items-end mb-6">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-6">
         <div>
           <p className="text-text-primary/80">So Far</p>
           <h2 className="text-2xl font-bold text-text-primary">Education</h2>
         </div>
-        <div className="flex flex-row items-center gap-4">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-4">
           <p className="text-xs text-text-primary/80">Need a copy?</p>
           <a 
             href="https://www.dropbox.com/scl/fi/bxsejsk0d4x93tkcqab6f/Resume.pdf?rlkey=kccnmbauol92jgrleiua1zoxo&st=cz2uinut&dl=0"
@@ -47,7 +47,7 @@ function Education() {
       </div>
       <div className="space-y-6 border-l-2 border-primary pl-6">
         {education.map((edu, index) => (
-          <div key={index} className="flex gap-4">
+          <div key={index} className="flex flex-col sm:flex-row gap-4">
             <div className="w-20 h-20 shrink-0 border border-primary/30 rounded-lg overflow-hidden bg-white/5 p-2 flex items-center justify-center">
               <img 
                 src={edu.logo} 
@@ -55,12 +55,12 @@ function Education() {
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
-            <div className="flex-1 flex justify-between items-start">
+            <div className="flex-1 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
               <div>
                 <h3 className="text-xl font-bold text-text-primary">{edu.school}</h3>
                 <p className="text-text-secondary">{edu.degree}</p>
               </div>
-              <div className="text-sm text-text-secondary/70 font-medium whitespace-nowrap ml-4 text-right">
+              <div className="text-sm text-text-secondary/70 font-medium sm:whitespace-nowrap sm:ml-4 sm:text-right">
                 <p>{edu.period}</p>
                 <p className="font-bold">{edu.location}</p>
               </div>

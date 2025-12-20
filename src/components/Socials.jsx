@@ -1,6 +1,6 @@
 function Socials() {
   return (
-    <div className="mb-8">
+    <div className="mb-8 ">
       <p className="text-md text-text-primary font-bold my-3">
         Connect with me, here are my socials
       </p>

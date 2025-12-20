@@ -8,8 +8,8 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="min-h-screen">
-      <div className="ripple-3"></div>
-      <div className="items-center justify-center max-w-[30%] mx-auto px-6 pt-20">
+      <div className="ripple-3" aria-hidden="true"></div>
+      <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 sm:pt-20 faded-column-borders">
         <Hero />
         <Socials />
         <Skills />
