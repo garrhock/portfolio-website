@@ -1,25 +1,26 @@
 function Education() {
+  const baseUrl = import.meta.env.BASE_URL
   const education = [
     {
       school: "The University of Texas at Dallas",
       degree: "Bachelor of Science in Computer Science",
       period: "Fall 2023 - Present",
       location: "Richardson, TX",
-      logo: "/public/images/utdlogo.png"
+      logo: `${baseUrl}images/utdlogo.png`
     },
     {
       school: "Collin Community College",
       degree: "Associate Degree",
       period: "Fall 2021 - Spring 2023",
       location: "Melissa, TX",
-      logo: "/public/images/collinlogo.png"
+      logo: `${baseUrl}images/collinlogo.png`
     },
     {
       school: "Melissa High School",
       degree: "High School Diploma",
       period: "Fall 2019 - Spring 2023",
       location: "Melissa, TX",
-      logo: "/public/images/melissalogo.png"
+      logo: `${baseUrl}images/melissalogo.png`
     }
   ]
 

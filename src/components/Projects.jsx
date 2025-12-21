@@ -1,18 +1,19 @@
 function Projects() {
+  const baseUrl = import.meta.env.BASE_URL
   const projects = [
     {
       title: "Full Stack X.com Clone",
       description: "Recreation of X.com to teach myself the basics of full stack development.",
       tech: ["React", "JavaScript", "Tailwind CSS", "Supabase"],
       link: "#",
-      image: "/images/XCLONE.png"
+      image: `${baseUrl}images/XCLONE.png`
     },
     {
       title: "Paws VS Claws",
       description: "Survival-action roguelite game like Vampire Survivors but with cats and dogs.",
       tech: ["Java","Greenfoot"],
       link: "#",
-      image: "/images/PVC.png"
+      image: `${baseUrl}images/PVC.png`
     },
   ]
 
