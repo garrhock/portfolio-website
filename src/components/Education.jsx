@@ -10,7 +10,7 @@ function Education() {
     },
     {
       school: "Collin Community College",
-      degree: "Associate Degree",
+      degree: "Dual Enrollment Coursework",
       period: "Fall 2021 - Spring 2023",
       location: "Melissa, TX",
       logo: `${baseUrl}images/collinlogo.png`
@@ -26,7 +26,7 @@ function Education() {
 
   return (
     <div className="mb-16">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-6">
+      <div className="flex flex-row gap-3 sm:flex-row sm:items-end justify-between mb-6">
         <div>
           <p className="text-text-primary/80">So Far</p>
           <h2 className="text-2xl font-bold text-text-primary">Education</h2>
@@ -48,7 +48,7 @@ function Education() {
       </div>
       <div className="space-y-6 border-l-2 border-primary pl-6">
         {education.map((edu, index) => (
-          <div key={index} className="flex flex-col sm:flex-row gap-4">
+          <div key={index} className="flex flex-row sm:flex-row gap-4">
             <div className="w-20 h-20 shrink-0 border border-primary/30 rounded-lg overflow-hidden bg-white/5 p-2 flex items-center justify-center">
               <img 
                 src={edu.logo} 
