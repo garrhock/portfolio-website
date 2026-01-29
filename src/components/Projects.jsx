@@ -7,14 +7,14 @@ function Projects() {
       title: "Full Stack X.com Clone",
       description: "Recreation of X.com to teach myself the basics of full stack development.",
       tech: ["React", "JavaScript", "Tailwind CSS", "Supabase" , "Node.js"],
-      link: "https://github.com/garrhock/x-clone",
+      link: "https://x-clone-cy2fvaz3p-garrhocks-projects.vercel.app/",
       image: `${baseUrl}images/XCLONE.png`
     },
     {
       title: "Paws VS Claws",
       description: "Survival-action roguelite game like Vampire Survivors but with cats and dogs.",
       tech: ["Java","Greenfoot"],
-      link: "https://github.com/garrhock/Paws-VS-Claws",
+      link: "https://github.com/garrhock/Paws-VS-Claws/wiki/Iteration-1",
       image: `${baseUrl}images/PVC.png`
     },
   ]
