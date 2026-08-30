@@ -3,7 +3,7 @@ import Mark from './Mark'
 import SectionHeading from './SectionHeading'
 
 const RESUME_URL =
-  'https://www.dropbox.com/scl/fi/bxsejsk0d4x93tkcqab6f/Resume.pdf?rlkey=kccnmbauol92jgrleiua1zoxo&st=cz2uinut&dl=0'
+  'https://www.dropbox.com/scl/fi/8t8y0r3grofs4e26t0t5z/Resume-Aug26.pdf?rlkey=nhin0wtfamk79dyvwt52trabw&st=xvkoif6p&dl=0'
 
 const JOBS = [
   {
