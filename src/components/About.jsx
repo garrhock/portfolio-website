@@ -7,8 +7,9 @@ function About() {
 
       <div className="space-y-4">
         <p>
-          I&apos;m a junior studying Computer Science at the University of Texas at Dallas, and
-          I like solving problems. I have a knack for breaking down large problems into more
+          I&apos;m a senior studying Computer Science at the University of Texas at Dallas,
+          graduating in <span className="font-medium text-heading">December 2026</span>, and I
+          like solving problems. I have a knack for breaking down large problems into more
           digestible pieces, and my curiosity on how different systems work usually leads me to
           my next project, whether it be a Social Media platform, a videogame, or a server.
         </p>
