@@ -1,17 +1,19 @@
 function Footer() {
   return (
-    <footer className="pt-1 px-4 border-t border-primary/20">
-      <div className="max-w-5xl mx-auto text-center">
-        <p className="text-text-secondary/70">
-          Made by{' '}
-          <a href="#" className="text-text-secondary/70 hover:text-primary-dark transition-colors">
-            @garretthockersmith
-          </a>
-        </p>
-        <p className="text-text-secondary/70 text-sm">
-          © 2025. All rights reserved
-        </p>
-      </div>
+    <footer className="max-w-md pb-16 font-mono text-xs leading-relaxed text-muted sm:pb-0">
+      <p>
+        Built with React, Vite, and Tailwind CSS, deployed with GitHub Pages. Type set in Public
+        Sans and JetBrains Mono. Layout inspired by{' '}
+        <a
+          href="https://brittanychiang.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="text-body transition-colors hover:text-accent"
+        >
+          Brittany Chiang
+        </a>
+        .
+      </p>
     </footer>
   )
 }
