@@ -57,19 +57,8 @@ const PROJECTS = [
     href: 'https://github.com/garrhock/CustomEconomy',
     image: null,
     description:
-      "A layered economy plugin for a Minecraft server I run, structured with service and repository separation over a connection-pooled database that runs on either SQLite or MySQL. Versioned schema migrations upgrade existing databases in place, and transaction writes are batched asynchronously so they never block the game's single-threaded loop. A startup audit checks every shop price against the sell table to prove no item can be bought and resold at a profit under the maximum multiplier.",
+      "A layered economy plugin for a Minecraft server I run, structured with service and repository separation over a connection-pooled database that runs on either SQLite or MySQL. Versioned schema migrations upgrade existing databases in place, and transaction writes are batched asynchronously so they never block the game's single-threaded loop. A startup audit checks every shop price against the sell table to prove no item can be bought and resold at a profit under the maximum multiplier. It also runs a second, inflation-resistant currency that enters the economy through exactly two channels, with a per-victim cooldown closing the kill-trading exploit two accounts could otherwise use to mint currency from nothing.",
     tags: ['Java', 'Paper API', 'SQLite', 'MySQL'],
-  },
-  {
-    title: 'Shards',
-    context: 'Personal',
-    mark: 'paper',
-    period: '2026',
-    href: 'https://github.com/garrhock/Shards',
-    image: null,
-    description:
-      'A second currency for the same server, built to resist the inflation that makes a primary currency meaningless late in a season. Shards enter the economy through exactly two channels, and a per-victim cooldown closes the obvious attack — two accounts kill-trading to mint currency from nothing. Balances are cached in memory while a player is online and mirrored to SQLite on a single-threaded executor so writes stay ordered.',
-    tags: ['Java', 'Paper API', 'SQLite'],
   },
   {
     title: 'Paws VS Claws',
