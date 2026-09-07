@@ -85,7 +85,7 @@ const PROJECTS = [
     title: 'Full Stack X.com Clone',
     context: 'Personal',
     period: 'Jun 2025',
-    href: 'https://x-clone-cy2fvaz3p-garrhocks-projects.vercel.app/',
+    href: 'https://x-clone-rho-five.vercel.app/',
     image: `${baseUrl}images/xclone.webp`,
     description:
       'A social platform built to teach myself full-stack development end to end — authentication, authorization, and CRUD across posts, comments, and profiles, with a component-based React frontend wired to Supabase for auth and real-time updates.',
