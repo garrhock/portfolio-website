@@ -14,7 +14,7 @@ const PROJECTS = [
     image: null,
     description:
       'A Proxmox VE virtualization host running game servers, media streaming, and network services in isolated Docker containers with per-instance CPU, memory, and port allocations. AdGuard Home handles network-wide DNS filtering and a WireGuard VPN consolidates remote access to a single UDP port.',
-    tags: ['Proxmox VE', 'Docker', 'Linux', 'WireGuard'],
+    tags: ['Proxmox VE', 'Docker', 'Pterodactyl', 'Linux', 'WireGuard'],
   },
   {
     title: 'Self-Provisioning Kubernetes Cluster',
@@ -25,7 +25,7 @@ const PROJECTS = [
     image: null,
     description:
       'Learned containerization from zero — Docker first, then Kubernetes — to bootstrap a multi-node cluster hosting an enterprise content management platform. The cluster provisions itself on boot: it connects to the correct database, creates its own nodesets and datasets, and pulls down the applications it needs, so tearing it down and bringing it back up takes no manual setup. Shipped to the production repository.',
-    tags: ['Kubernetes', 'Docker', 'Linux', 'kubectl'],
+    tags: ['Kubernetes', 'Docker', 'Bash', 'Linux', 'kubectl'],
   },
   {
     title: 'Redmine Textile to Markdown Migration',
@@ -36,7 +36,7 @@ const PROJECTS = [
     image: null,
     description:
       "Forked an open-source conversion script and tailored it to the company's Redmine instance and its formatting edge cases, then ran it against the live database to convert years of Textile-formatted issues and wiki pages to Markdown. Now shipped as a plugin in the production repository.",
-    tags: ['Redmine', 'Git'],
+    tags: ['Ruby', 'Redmine', 'Git'],
   },
   {
     title: 'Broadridge ECM Platform Migration',
@@ -47,7 +47,7 @@ const PROJECTS = [
     image: null,
     description:
       'Collaborated on migrating Broadridge off a legacy ECM platform, writing extraction and indexing programs in JavaScript and a proprietary indexing language for their highest-priority document classes. Validated output against the source documents to verify accuracy ahead of cutover.',
-    tags: ['JavaScript', 'Data Migration', 'ECM'],
+    tags: ['JavaScript', 'Proprietary Indexing Language', 'ECM'],
   },
   {
     title: 'CustomEconomy',
@@ -58,7 +58,7 @@ const PROJECTS = [
     image: null,
     description:
       "A layered economy plugin for a Minecraft server I run, structured with service and repository separation over a connection-pooled database that runs on either SQLite or MySQL. Versioned schema migrations upgrade existing databases in place, and transaction writes are batched asynchronously so they never block the game's single-threaded loop. A startup audit checks every shop price against the sell table to prove no item can be bought and resold at a profit under the maximum multiplier.",
-    tags: ['Java 21', 'Paper API', 'SQLite', 'MySQL', 'HikariCP'],
+    tags: ['Java', 'Paper API', 'SQLite', 'MySQL'],
   },
   {
     title: 'Shards',
@@ -69,7 +69,7 @@ const PROJECTS = [
     image: null,
     description:
       'A second currency for the same server, built to resist the inflation that makes a primary currency meaningless late in a season. Shards enter the economy through exactly two channels, and a per-victim cooldown closes the obvious attack — two accounts kill-trading to mint currency from nothing. Balances are cached in memory while a player is online and mirrored to SQLite on a single-threaded executor so writes stay ordered.',
-    tags: ['Java 21', 'Paper API', 'SQLite'],
+    tags: ['Java', 'Paper API', 'SQLite'],
   },
   {
     title: 'Paws VS Claws',
